@@ -11,8 +11,27 @@ const GithubProvider = ({ children }) => {
   const [githubUser, setgithubUser] = useState(mockUser);
   const [gitRepos, setgitRepos] = useState(mockRepos);
   const [followers, setfollowers] = useState(mockFollowers);
+
+  const updateGithubUser = (username) => {
+    axios
+      .get(`https://api.github.com/users/${username}`)
+      .then((response) => {
+        // Assuming the response data contains user information
+        const userData = response.data;
+        console.log("User Data:", userData);
+        setgithubUser(userData);
+      })
+      .catch((error) => {
+        // Handle error
+        console.error("Error fetching user data:", error);
+      });
+  };
+  console.log(githubUser);
+
   return (
-    <GithubCOntext.Provider value={{ githubUser, gitRepos, followers }}>
+    <GithubCOntext.Provider
+      value={{ githubUser, gitRepos, followers, updateGithubUser }}
+    >
       {children}
     </GithubCOntext.Provider>
   );

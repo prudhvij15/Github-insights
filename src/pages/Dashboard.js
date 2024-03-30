@@ -6,7 +6,9 @@ const Dashboard = () => {
   return (
     <main>
       <h2>Dashboard Page</h2>
+      <Search />
       <Info />
+      <User />
     </main>
   );
 };
