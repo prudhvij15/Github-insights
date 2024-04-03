@@ -5,19 +5,13 @@ import { GithubCOntext, GithubContext } from "../context/context";
 const Search = () => {
   const [user, setUser] = useState("");
   const { updateGithubUser } = useContext(GithubCOntext);
-<<<<<<< HEAD
   const { gitRepo, gitFollowers } = useContext(GithubCOntext);
-=======
->>>>>>> origin/main
   function handleSearch(e) {
     e.preventDefault();
     // console.log(user);
     updateGithubUser(user);
-<<<<<<< HEAD
     gitRepo(user);
     gitFollowers(user);
-=======
->>>>>>> origin/main
   }
   return (
     <section className="section">

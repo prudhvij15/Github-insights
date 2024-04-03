@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-// STEP 1 - Include Dependencies
-// Include react
 import React from "react";
 import ReactDOM from "react-dom";
 
@@ -45,12 +42,3 @@ const ChartComponent = ({ data }) => {
 };
 
 export default ChartComponent;
-=======
-import React from 'react';
-
-const ExampleChart = () => {
-  return <div>chart</div>;
-};
-
-export default ExampleChart;
->>>>>>> origin/main

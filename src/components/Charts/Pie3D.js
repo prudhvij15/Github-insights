@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-// STEP 1 - Include Dependencies
-// Include react
 import React from "react";
 import ReactDOM from "react-dom";
 
@@ -45,12 +42,5 @@ const Pie3D = ({ data }) => {
   return <ReactFC {...chartConfigs} />;
 };
 // STEP 4 - Creating the DOM element to pass the react-fusioncharts component
-=======
-import React from 'react';
-
-const Pie3D = () => {
-  return <div>chart</div>;
-};
->>>>>>> origin/main
 
 export default Pie3D;

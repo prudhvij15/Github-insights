@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { GithubCOntext } from "../context/context";
@@ -44,14 +43,6 @@ const Repos = () => {
       </Wrapper>
     </section>
   );
-=======
-import React from 'react';
-import styled from 'styled-components';
-import { GithubContext } from '../context/context';
-import { ExampleChart, Pie3D, Column3D, Bar3D, Doughnut2D } from './Charts';
-const Repos = () => {
-  return <h2>repos component</h2>;
->>>>>>> origin/main
 };
 
 const Wrapper = styled.div`
@@ -65,20 +56,6 @@ const Wrapper = styled.div`
   @media (min-width: 1200px) {
     grid-template-columns: 2fr 3fr;
   }
-<<<<<<< HEAD
-=======
-
-  div {
-    width: 100% !important;
-  }
-  .fusioncharts-container {
-    width: 100% !important;
-  }
-  svg {
-    width: 100% !important;
-    border-radius: var(--radius) !important;
-  }
->>>>>>> origin/main
 `;
 
 export default Repos;

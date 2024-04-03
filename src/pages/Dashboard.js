@@ -9,10 +9,7 @@ const Dashboard = () => {
       <Search />
       <Info />
       <User />
-<<<<<<< HEAD
       <Repos />
-=======
->>>>>>> origin/main
     </main>
   );
 };

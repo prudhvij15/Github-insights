@@ -26,7 +26,6 @@ const GithubProvider = ({ children }) => {
         console.error("Error fetching user data:", error);
       });
   };
-<<<<<<< HEAD
 
   const gitRepo = (username) => {
     axios
@@ -69,13 +68,6 @@ const GithubProvider = ({ children }) => {
         gitRepo,
         gitFollowers,
       }}
-=======
-  console.log(githubUser);
-
-  return (
-    <GithubCOntext.Provider
-      value={{ githubUser, gitRepos, followers, updateGithubUser }}
->>>>>>> origin/main
     >
       {children}
     </GithubCOntext.Provider>
